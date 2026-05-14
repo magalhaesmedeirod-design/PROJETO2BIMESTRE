@@ -1,0 +1,24 @@
+.geral{
+   background-color: rgb(216, 161, 78);
+   border: 2px solid #bb8105;
+   border-radius: 8px; 
+   width: 400px;
+   height: 600px;
+   padding: 20px;
+}
+
+img{
+    padding: 100px;
+    border: 8px;
+    width: 150px;
+    
+    
+}
+
+.breve {
+    color: #ffffff;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
