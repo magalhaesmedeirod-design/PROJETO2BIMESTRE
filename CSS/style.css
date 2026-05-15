@@ -1,16 +1,20 @@
 .geral{
-   background-color: rgb(216, 161, 78);
-   border: 2px solid #bb8105;
-   border-radius: 8px; 
-   width: 400px;
-   height: 600px;
-   padding: 20px;
+   background-color: rgb(248, 163, 248);
+   border-radius: 25px; 
+   width: 700px;
+   height: 1000px;
+   padding: 30px;
+   margin: 0 auto;
+   display: block;
 }
+
 
 img{
     padding: 100px;
     border: 8px;
-    width: 150px;
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
     
     
 }
@@ -20,5 +24,9 @@ img{
 }
 
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(247, 204, 243);
+}
+
+.albuns{
+    background-color: bisque;
 }
