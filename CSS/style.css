@@ -9,7 +9,7 @@
 }
 
 
-img{
+.biografia{
     padding: 100px;
     border: 8px;
     width: 500px;
@@ -29,4 +29,70 @@ body {
 
 .albuns{
     background-color: bisque;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    background-color: transparent;
+}
+
+/* Centraliza o título principal da seção */
+.albuns h2 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
+  font-family: sans-serif;
+}
+
+/* Alinha os blocos de álbum um ao lado do outro */
+.lista-albuns {
+  display: flex;
+  flex-wrap: wrap;         /* Quebra linha se a tela for pequena */
+  justify-content: center; /* Centraliza o grupo de álbuns na tela */
+  gap: 30px;               /* Espaço de 30px entre cada álbum */
+}
+
+/* Controla cada álbum individualmente */
+.item-album {
+  display: flex;
+  flex-direction: column;  /* Força o botão a ir para baixo da imagem */
+  align-items: center;     /* Centraliza o botão em relação à foto */
+  width: 200px;            /* Define uma largura padrão fixa para cada um */
+}
+
+/* Controla o tamanho e exibição das fotos dos álbuns */
+.item-album img {
+  width: 100%;             /* Preenche os 200px de largura do bloco */
+  height: 200px;           /* Mantém a altura quadrada padrão */
+  object-fit: contain;     /* Mostra o álbum inteiro sem cortar nenhuma borda */
+  border-radius: 4px;      
+}
+
+/* Container do link */
+.cry {
+  margin-top: 15px;        /* Espaço entre a imagem e o botão */
+  text-align: center;
+  width: 100%;             /* Garante que o container ocupe a largura do bloco */
+}
+
+/* O Link estilizado como botão conforme você pediu */
+.cry a {
+  display: inline-block;   /* Permite aplicar padding e margens corretamente */
+  background-color: #745032;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: antiquewhite;
+  border-radius: 20px;     /* Mantive o de 20px que estava no fim da sua lista */
+  padding: 8px 15px;
+  text-align: center;
+  font-family: sans-serif; /* Define uma fonte limpa para o texto */
+  transition: background-color 0.2s ease; /* Deixa a mudança de cor suave ao passar o mouse */
+}
+
+/* Efeito opcional: escurece um pouco o botão quando passa o mouse por cima */
+.cry a:hover {
+  background-color: #5c3e26;
 }
