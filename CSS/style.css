@@ -96,3 +96,25 @@ img{
 .cry a:hover {
   background-color: #5c3e26;
 }
+
+
+
+table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    th, td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+      }
+
+      .cryy{
+        background-color: #fce4ec; /* Rosa bebê */
+        color: #4a374a; /* Roxo acinzentado escuro */
+        font-family: 'Courier New', Courier, monospace; /* Estilo máquina de escrever antiga */
+      }
