@@ -80,7 +80,7 @@ img{
 /* O Link estilizado como botão conforme você pediu */
 .cry a {
   display: inline-block;   /* Permite aplicar padding e margens corretamente */
-  background-color: #745032;
+  background-color: #a494a5;
   font-size: 15px;
   font-weight: bold;
   text-decoration: none;
@@ -94,7 +94,7 @@ img{
 
 /* Efeito opcional: escurece um pouco o botão quando passa o mouse por cima */
 .cry a:hover {
-  background-color: #5c3e26;
+  background-color: #554253;
 }
 
 
