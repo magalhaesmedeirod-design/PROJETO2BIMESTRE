@@ -1,5 +1,5 @@
 .geral{
-   background-color: rgb(248, 163, 248);
+   background-color: rgb(199, 154, 199);
    border-radius: 25px; 
    width: 700px;
    height: 1000px;
@@ -24,7 +24,14 @@
 }
 
 body {
-    background-color: rgb(247, 204, 243);
+    background-color: rgb(247, 223, 244);
+     display: flex;
+    flex-direction: column; /* Alinha os itens de cima para baixo */
+    align-items: center;     /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    min-height: 100vh;       /* Garante que ocupe a altura toda da tela */
+    padding: 20px;
+    gap: 15px; 
 }
 
 .albuns{
@@ -103,6 +110,7 @@ table {
         width: 100%;
         border-collapse: collapse;
         margin-top: 20px;
+        border: 2px solid;
     }
     th, td {
         border: 1px solid #ccc;
@@ -118,3 +126,40 @@ table {
         color: #4a374a; /* Roxo acinzentado escuro */
         font-family: 'Courier New', Courier, monospace; /* Estilo máquina de escrever antiga */
       }
+
+      .cr {
+  width: 400px;
+  border-collapse: collapse; /* Remove linhas duplas nas bordas */
+  font-family: Arial, sans-serif;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.yy {
+  background-color: #aa91ac;
+}
+
+.yyy {
+  background-color: #f2f2f2;
+}
+
+div {
+   /* 1. Controle de tamanho (Evita que a caixa colapse ou estique infinito) */
+  width: 100%;
+  max-width: 400px;        /* Defina a largura limite que você quer para a caixa */
+  min-height: 50px;        /* Altura mínima, permitindo que a div cresça para baixo se houver muito texto */
+  box-sizing: border-box;  /* Garante que padding e borda contem DENTRO do tamanho total */
+  
+  /* 2. Visual (Fundo e Borda que você escolheu) */
+  padding: 20px;
+  background-color: #a494a5;
+  border: 2px solid #000;
+  
+  /* 3. Trava de segurança para o Texto */
+  word-break: break-word;  /* Força a quebra de palavras longas ou links se tocarem na borda */
+  white-space: normal;     /* Garante que o texto quebre linhas naturalmente */
+  
+  /* 4. Flexbox (Se quiser alinhar o bloco na tela) */
+  display: flex;
+  flex-direction: column;  /* Organiza o conteúdo de cima para baixo */
+}
